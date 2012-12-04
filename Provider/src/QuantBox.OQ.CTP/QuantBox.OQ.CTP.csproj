@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuantBox.OQ.CTP</RootNamespace>
     <AssemblyName>QuantBox.OQ.CTP</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>E:\Program Files\SmartQuant Ltd\OpenQuant\Framework\bin\</OutputPath>
+    <OutputPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,26 +34,26 @@
   <ItemGroup>
     <Reference Include="SmartQuant, Version=1.0.3762.22305, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\reference\using\SmartQuant.dll</HintPath>
+      <HintPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Framework\bin\SmartQuant.dll</HintPath>
     </Reference>
     <Reference Include="SmartQuant.Data">
-      <HintPath>..\reference\using\SmartQuant.Data.dll</HintPath>
+      <HintPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Framework\bin\SmartQuant.Data.dll</HintPath>
     </Reference>
     <Reference Include="SmartQuant.Execution, Version=1.0.3762.22307, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\reference\using\SmartQuant.Execution.dll</HintPath>
+      <HintPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Framework\bin\SmartQuant.Execution.dll</HintPath>
     </Reference>
     <Reference Include="SmartQuant.FIX, Version=1.0.3762.22302, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\reference\using\SmartQuant.FIX.dll</HintPath>
+      <HintPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Framework\bin\SmartQuant.FIX.dll</HintPath>
     </Reference>
     <Reference Include="SmartQuant.Instruments, Version=1.0.3762.22306, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\reference\using\SmartQuant.Instruments.dll</HintPath>
+      <HintPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Framework\bin\SmartQuant.Instruments.dll</HintPath>
     </Reference>
     <Reference Include="SmartQuant.Providers, Version=1.0.3762.22306, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\reference\using\SmartQuant.Providers.dll</HintPath>
+      <HintPath>C:\Program Files\SmartQuant Ltd\OpenQuant 2\Framework\bin\SmartQuant.Providers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -75,6 +75,11 @@
     <Compile Include="DbInMemInvestorPosition.cs" />
     <Compile Include="DbInMemTrade.cs" />
     <Compile Include="OrderRecord.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="QBProvider.ExecutionProvider.cs" />
     <Compile Include="QBProvider.InstrumentProvider.cs" />
     <Compile Include="QBProvider.MarketDataProvider.cs" />
@@ -83,6 +88,12 @@
     <Compile Include="QBProvider.Provider.cs" />
     <Compile Include="QBProvider.Settings.cs" />
     <Compile Include="ServerItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

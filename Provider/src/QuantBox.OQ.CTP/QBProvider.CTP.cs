@@ -526,12 +526,12 @@ namespace QuantBox.OQ.CTP
 
                     if (null != marketDataFilter)
                     {
-                        Trade t = marketDataFilter.FilterTrade(trade, instrument.Symbol);
+/*                        Trade t = marketDataFilter.FilterTrade(trade, instrument.Symbol);
                         if (null != t)
                         {
                             EmitNewTradeEvent(instrument, t);
                         }
-                    }
+*/                    }
                     else
                     {
                         EmitNewTradeEvent(instrument, trade);
@@ -556,12 +556,12 @@ namespace QuantBox.OQ.CTP
 
                     if (null != marketDataFilter)
                     {
-                        Quote q = marketDataFilter.FilterQuote(quote, instrument.Symbol);
+/*                        Quote q = marketDataFilter.FilterQuote(quote, instrument.Symbol);
                         if (null != q)
                         {
                             EmitNewQuoteEvent(instrument, q);
                         }
-                    }
+*/                    }
                     else
                     {
                         EmitNewQuoteEvent(instrument, quote);
